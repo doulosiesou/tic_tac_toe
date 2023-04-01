@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+    <div id="container">
+        <div class = "header-text" id="header">
+            <p>Tic Tac Toe</p>
+            <p id="results"></p>
+        </div>
+        <div id="lower-part">
+            <div id="game-info">
+                
+                <p class = "game-type">Currently the game type is player vs computer</p>
+                <p class = "game-type">Future versions will have player vs player and a more difficult computer opponent</p>
+                <p class = "game-type">Press F5 to Reload Page for new Round</p>
+                <p id = "number-games"></p>
+                
+            </div>
+
+            <div id="gameboard">
+                <button class="gameboard-button" id="btn1" onclick="Gameboard.row1[0] ='X'"></button>         
+                <button class="gameboard-button" id="btn2" onclick="Gameboard.row1[1] ='X'"></button>
+                <button class="gameboard-button" id="btn3" onclick="Gameboard.row1[2] ='X'"></button>
+                <button class="gameboard-button" id="btn4" onclick="Gameboard.row2[0] ='X'"></button>
+                <button class="gameboard-button" id="btn5" onclick="Gameboard.row2[1] ='X'"></button>
+                <button class="gameboard-button" id="btn6" onclick="Gameboard.row2[2] ='X'"></button>
+                <button class="gameboard-button" id="btn7" onclick="Gameboard.row3[0] ='X'"></button>
+                <button class="gameboard-button" id="btn8" onclick="Gameboard.row3[1] ='X'"></button>
+                <button class="gameboard-button" id="btn9" onclick="Gameboard.row3[2] ='X'"></button>
+                
+            </div>
+
+            <div id="score-card">
+                <p id="top-text">Score Card</p>
+                <div class="winnings-table">
+                    <p id="player-wins">Player has won 0 games</p>
+                    <p id="computer-wins">Computer has won 0 games</p>
+                    <p id="dotted-line"></p>
+                    <p id="round-winner">Round Winner</p>
+                    <p id="reset-info">Click Reset Board button for next round in match</p>
+                    <button id="reset-board">Reset Board</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Huginn and Muninn Productions &copy;</p>
+        </div>
+    </div>
+    <script src="./jscript.js"></script>
+</body>
+</html>
